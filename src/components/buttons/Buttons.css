@@ -1,0 +1,8 @@
+.link-button {
+  transition: filter 0.2s ease-in;
+}
+
+.link-button:hover {
+  filter: invert(72%) sepia(77%) saturate(3893%) hue-rotate(139deg)
+    brightness(84%) contrast(102%);
+}
