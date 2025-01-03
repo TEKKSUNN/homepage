@@ -9,8 +9,18 @@
   box-shadow: 4px 4px 4px #00000025;
 }
 
+@keyframes slide-up {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
 .profile-img {
   border-radius: 10px;
+  z-index: 1;
 }
 
 .profile-desc {
@@ -21,6 +31,12 @@
   background-color: #eee;
   border-radius: 0 10px 10px 0;
   padding: 15px 30px;
+}
+
+.profile-desc,
+.profile-img {
+  animation: slide-up 1s ease-out, fade-in 0.5s ease-in both;
+  animation-delay: 1s;
 }
 
 .profile-desc-title,
@@ -38,13 +54,31 @@
   font: 20px 'Yaldevi';
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes slide-top-bottom {
+  0% {
+    transform: translateY(-510px) translateX(1px);
+  }
+  100% {
+    transform: rotate(-7.5deg) translateY(-110px) translateX(1px);
+  }
+}
+
 .profile-bg {
   background-color: #393e46;
-  min-width: 1375px;
+  min-width: 1380px;
   min-height: 522px;
   position: absolute;
   z-index: -1;
-  transform: rotate(-7.5deg) translateY(-110px);
+  animation: fade-in 0.75s ease-out, slide-top-bottom 1s ease-out both;
 }
 
 .buttons {
