@@ -110,6 +110,14 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+#root {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
 #root > * {
   margin: 0 140px;
 }
