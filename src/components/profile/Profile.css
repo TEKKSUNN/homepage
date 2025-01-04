@@ -35,7 +35,9 @@
 
 .profile-desc,
 .profile-img {
-  animation: slide-up 1s ease-out, fade-in 0.5s ease-in both;
+  animation:
+    slide-up 1s ease-out,
+    fade-in 0.5s ease-in both;
   animation-delay: 1s;
 }
 
@@ -65,20 +67,22 @@
 
 @keyframes slide-top-bottom {
   0% {
-    transform: translateY(-510px) translateX(1px);
+    transform: translateY(-50vh);
   }
   100% {
-    transform: rotate(-7.5deg) translateY(-110px) translateX(1px);
+    transform: rotate(-7.5deg) translateY(-20vh);
   }
 }
 
 .profile-bg {
   background-color: #393e46;
-  min-width: 1380px;
-  min-height: 522px;
+  min-width: 125vw;
+  min-height: 75vh;
   position: absolute;
   z-index: -1;
-  animation: fade-in 0.75s ease-out, slide-top-bottom 1s ease-out both;
+  animation:
+    fade-in 0.75s ease-out,
+    slide-top-bottom 1s ease-out both;
 }
 
 .buttons {
