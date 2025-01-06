@@ -25,7 +25,9 @@
   min-height: 164px;
   max-width: 420px;
   max-height: 236px;
-  transition: transform 1s ease, border 0.5s;
+  transition:
+    transform 1s ease,
+    border 0.5s;
 }
 
 .image-link img:hover {
@@ -34,6 +36,6 @@
 }
 
 .dev-link:first-of-type img {
-  filter: invert(99%) sepia(3%) saturate(963%) hue-rotate(206deg) brightness(118%) contrast(87%);
+  filter: invert(99%) sepia(3%) saturate(963%) hue-rotate(206deg)
+    brightness(118%) contrast(87%);
 }
-

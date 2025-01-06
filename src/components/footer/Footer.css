@@ -1,5 +1,5 @@
 footer {
-  background-color: #393E46;
+  background-color: #393e46;
   margin: 0;
   align-self: stretch;
   color: #eee;
@@ -30,6 +30,6 @@ footer {
 }
 
 .footer-button img {
-  filter: invert(99%) sepia(3%) saturate(963%) hue-rotate(206deg) brightness(118%) contrast(87%);
+  filter: invert(99%) sepia(3%) saturate(963%) hue-rotate(206deg)
+    brightness(118%) contrast(87%);
 }
-

@@ -20,7 +20,7 @@ export function GithubButton({ className }) {
 
 GithubButton.propTypes = {
   className: PropTypes.string,
-}
+};
 
 export function FacebookButton({ className }) {
   return (
@@ -35,7 +35,7 @@ export function FacebookButton({ className }) {
 
 FacebookButton.propTypes = {
   className: PropTypes.string,
-}
+};
 
 export function LinkedInButton({ className }) {
   return (
@@ -50,7 +50,7 @@ export function LinkedInButton({ className }) {
 
 LinkedInButton.propTypes = {
   className: PropTypes.string,
-}
+};
 
 export function SocialButtons({ buttonClassName }) {
   return (

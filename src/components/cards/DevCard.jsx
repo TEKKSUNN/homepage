@@ -2,7 +2,7 @@ import './DevCard.css';
 import { OpenWebsiteButton, SourceCodeButton } from '../buttons/Buttons.jsx';
 import LinkButton from '../buttons/LinkButton.jsx';
 import PropTypes from 'prop-types';
-import { useInView } from "react-intersection-observer";
+import { useInView } from 'react-intersection-observer';
 
 function DevCard({ title, desc, imageURL, websiteURL, sourceCodeURL }) {
   const { ref, inView } = useInView({
@@ -12,7 +12,7 @@ function DevCard({ title, desc, imageURL, websiteURL, sourceCodeURL }) {
   console.log(inView);
 
   return (
-    <div className={`dev-card${inView ? " animate" : ""}`} ref={ref}>
+    <div className={`dev-card${inView ? ' animate' : ''}`} ref={ref}>
       <h2 className="dev-card-title">{title}</h2>
       <LinkButton
         url={websiteURL}

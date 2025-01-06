@@ -7,8 +7,15 @@ function Footer() {
   return (
     <footer>
       <h1 className="title">Contact Me</h1>
-      <p className="desc">Please get in touch with us if you think our work could be mutually beneficial.</p>
-      <p className="address">1234 Random Road<br />Random Town, Narnia 12345</p>
+      <p className="desc">
+        Please get in touch with us if you think our work could be mutually
+        beneficial.
+      </p>
+      <p className="address">
+        1234 Random Road
+        <br />
+        Random Town, Narnia 12345
+      </p>
       <div className="phone info">
         <img src={Phone} alt="phone icon" />
         <p className="icon-desc">123-456-7890</p>
@@ -23,4 +30,3 @@ function Footer() {
 }
 
 export default Footer;
-

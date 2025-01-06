@@ -28,8 +28,10 @@
   gap: 20px;
 }
 
-.dev-card { 
-  transition: transform 1s ease-out, opacity 1s ease-out;
+.dev-card {
+  transition:
+    transform 1s ease-out,
+    opacity 1s ease-out;
   opacity: 0%;
 }
 
