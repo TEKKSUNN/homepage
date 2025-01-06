@@ -1,0 +1,35 @@
+footer {
+  background-color: #393E46;
+  margin: 0;
+  align-self: stretch;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  gap: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Yaldevi';
+  gap: 5px;
+}
+
+.desc,
+.address {
+  font-family: 'Yaldevi';
+}
+
+.icon-desc {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-button img {
+  filter: invert(99%) sepia(3%) saturate(963%) hue-rotate(206deg) brightness(118%) contrast(87%);
+}
+
