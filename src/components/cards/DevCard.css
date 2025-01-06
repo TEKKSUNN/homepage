@@ -1,0 +1,39 @@
+.dev-card {
+  background-color: #222831;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #eee;
+  border-radius: 5px;
+  gap: 10px;
+}
+
+.dev-card-title {
+  font: 1.5rem 'Inter';
+  text-align: left;
+}
+
+.dev-card-desc {
+  font: 1rem 'Yaldevi';
+  text-align: center;
+}
+
+.image-link img {
+  max-width: 291px;
+  min-height: 164px;
+  max-width: 420px;
+  max-height: 236px;
+  transition: transform 1s ease, border 0.5s;
+}
+
+.image-link img:hover {
+  transform: scale(1.1);
+  border: 5px solid #222831;
+}
+
+.dev-link:first-of-type img {
+  filter: invert(99%) sepia(3%) saturate(963%) hue-rotate(206deg) brightness(118%) contrast(87%);
+}
+

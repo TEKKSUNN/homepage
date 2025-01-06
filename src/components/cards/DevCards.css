@@ -1,0 +1,48 @@
+.works {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.works .title {
+  font: 48px 'Italianno';
+  align-self: flex-start;
+  animation: appear 1s ease-in both;
+  animation-delay: 2s;
+}
+
+.dev-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 20px;
+}
+
+.dev-card { 
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  opacity: 0%;
+}
+
+.dev-card:nth-of-type(odd) {
+  transform: translateX(-10vw);
+}
+
+.dev-card:nth-of-type(even) {
+  transform: translateX(10vw);
+  transition-delay: 0.5s;
+}
+
+.dev-card.animate {
+  transform: translateX(0px);
+  opacity: 100%;
+}
