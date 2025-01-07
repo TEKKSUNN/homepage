@@ -65,4 +65,8 @@
     gap: 40px;
     grid-template-columns: 1fr;
   }
+
+  .dev-card:nth-of-type(even) {
+    transition-delay: 0s;
+  }
 }
