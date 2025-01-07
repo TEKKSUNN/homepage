@@ -21,10 +21,8 @@
 }
 
 .image-link img {
-  max-width: 291px;
-  min-height: 164px;
+  min-width: 200px;
   max-width: 420px;
-  max-height: 236px;
   transition:
     transform 1s ease,
     border 0.5s;

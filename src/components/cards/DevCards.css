@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   align-self: stretch;
 }
 
@@ -24,9 +23,11 @@
 
 .dev-cards {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
   grid-auto-rows: 1fr;
   gap: 20px;
+  align-content: center;
+  justify-content: center;
 }
 
 .dev-card {
@@ -48,4 +49,18 @@
 .dev-card.animate {
   transform: translateX(0px);
   opacity: 100%;
+}
+
+@media (max-width: 599px) {
+  .works {
+    gap: 80px;
+  }
+
+  .works .title {
+    align-self: center;
+  }
+
+  .dev-cards {
+    gap: 40px;
+  }
 }
