@@ -63,5 +63,6 @@
 
   .dev-cards {
     gap: 40px;
+    grid-template-columns: 1fr;
   }
 }
