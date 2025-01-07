@@ -9,7 +9,7 @@ function DevCard({ title, desc, imageURL, websiteURL, sourceCodeURL }) {
     threshold: 0.25, // Trigger when 25% is visible
     triggerOnce: true, // Trigger only once
   });
-  
+
   return (
     <div className={`dev-card${inView ? ' animate' : ''}`} ref={ref}>
       <h2 className="dev-card-title">{title}</h2>

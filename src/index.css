@@ -144,11 +144,11 @@ body {
   #root > *:not(:last-child) {
     margin: 0 40px;
   }
-  
+
   #root > :first-child {
     margin-top: 40px;
   }
-  
+
   #root > :last-child {
     padding: 40px 40px;
   }
