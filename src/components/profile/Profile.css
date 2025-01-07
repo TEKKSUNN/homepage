@@ -91,3 +91,43 @@
   justify-content: center;
   gap: 10px;
 }
+
+@media (max-width: 1024px) {
+  .profile {
+    flex-direction: column;
+  }
+
+  .profile-bg {
+    min-height: 125vh;
+  }
+
+  .profile-desc {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 599px) {
+  .profile {
+    flex-direction: column;
+    align-self: stretch;
+  }
+
+  .profile-desc {
+    align-self: stretch;
+    border-radius: 10px;
+  }
+
+  .profile-desc-title {
+    align-self: center;
+    text-align: center;
+  }
+
+  .profile-bg {
+    min-height: 125vh;
+  }
+
+  .profile-img {
+    max-width: 200px;
+    max-height: 200px;
+  }
+}
