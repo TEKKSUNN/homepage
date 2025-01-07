@@ -47,13 +47,13 @@
 }
 
 .profile-desc-title {
-  font: 40px 'Italianno';
+  font: 4.6ex 'Italianno';
   margin: 0;
   padding: 0;
 }
 
 .profile-desc-desc {
-  font: 20px 'Yaldevi';
+  font: 2.3ex 'Yaldevi';
 }
 
 @keyframes fade-in {
