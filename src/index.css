@@ -130,3 +130,30 @@ body {
   margin: 0;
   padding: 0;
 }
+
+@media (max-width: 599px) {
+  #root {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  #root > *:not(:last-child) {
+    margin: 0 40px;
+  }
+  
+  #root > :first-child {
+    margin-top: 40px;
+  }
+  
+  #root > :last-child {
+    padding: 40px 40px;
+  }
+
+  #root *:not(.dev-card):not(.profile-bg) {
+    animation: none;
+  }
+}
